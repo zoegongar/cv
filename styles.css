@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font: 16px Roboto, sans-serif;
+  }
+  
+  .sidebar {
+    width: 100vw;
+    max-width: 100%;
+    padding: 1.5rem 2rem;
+    background-color: #222;
+    color: white;
+  }
+  
+  .info-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .name-position, .links {
+    flex: 3 10 300px; /* ambos ocupan lo mismo, mínimo 300px */
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  
+  .name {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .position {
+    font-size: 1.2rem;
+    color: #bbb;
+  }
+
+  .links{
+    text-align: left;
+  }
+  
+  .links a {
+    color: #8af;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  .cv-section {
+    border-radius: 8px;
+    padding: 0 1rem 0.1rem 1.5rem;
+  
+    &:first-of-type {
+      padding-top: 1rem;
+    }
+  }
+  
+  
+  
+  /* Sección principal */
+  .main-section {        
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+  }
+  
+  /* Contenedor de subsecciones */
+  .sub-sections {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 0.4rem;
+    color: #4e4b4b;
+    p {
+      margin: 0.5rem;
+    }
+    p::first-line {
+      color: #232222;
+    }
+  }
+  
+  /* Sub-sección individual */
+/*   .sub-section {
+    flex: 1 1 120px;
+    min-width: 120px;    
+    padding: 0.3rem;
+    font-size: 0.95rem;
+    color: #0a0b0c;
+  } */
